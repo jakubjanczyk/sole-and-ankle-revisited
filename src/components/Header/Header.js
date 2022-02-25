@@ -57,19 +57,25 @@ const Header = () => {
   );
 };
 
-const MainHeader = styled.div`
+
+const HeaderTemplate = styled.div`
   display: flex;
   align-items: baseline;
   padding: 18px 32px;
   height: 72px;
   border-bottom: 1px solid ${COLORS.gray[300]};
+`;
+
+const MainHeader = styled(HeaderTemplate)`
+  overflow-x: auto;
+  overflow-y: hidden;
   
   @media ${MEDIA_QUERIES.tablet} {
     display: none;
   }
 `;
 
-const MobileHeader = styled(MainHeader)`
+const MobileHeader = styled(HeaderTemplate)`
   display: none;
   gap: 8px;
   align-items: center;
