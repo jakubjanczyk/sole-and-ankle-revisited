@@ -75,6 +75,7 @@ const MobileHeader = styled(MainHeader)`
   align-items: center;
   @media ${MEDIA_QUERIES.tablet} {
     display: flex;
+    position: relative;
   }
 `;
 
