@@ -42,7 +42,7 @@ const Overlay = styled(DialogOverlay)`
   left: 0;
   right: 0;
   bottom: 0;
-  background: hsl(220deg 6% 40% / 80%);
+  background: var(--color-backdrop);
   display: flex;
   justify-content: flex-end;
 `
@@ -70,14 +70,14 @@ const Nav = styled.nav`
 `
 
 const NavLink = styled.a`
-  color: ${COLORS.gray[900]};
+  color: var(--color-gray-900);
   font-weight: ${WEIGHTS.medium};
   text-decoration: none;
   font-size: 1.125rem;
   text-transform: uppercase;
 
   &:first-of-type {
-    color: ${COLORS.secondary};
+    color: var(--color-secondary);
   }
 `
 
